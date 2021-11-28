@@ -16,7 +16,6 @@
           <h2>{{ post.title }}</h2>
         </a>
       </div>
-      <div class="author mt-2">Author: {{ post.author }}</div>
       <div class="excerpt" v-html="formatPostDescription(post.description)"></div>
       <div class="read-more">
         <a
@@ -90,6 +89,9 @@ export default {
 <style lang="scss">
 #rtb {
   .rtb-row {
+    & > div {
+      padding-bottom: 64px;
+    }
     .post-date {
       position: absolute;
       top: 3px;
@@ -121,6 +123,11 @@ export default {
     .rtb-col {
       margin-bottom: 20px;
     }
+    .post-title {
+      h2 {
+        font-size: 1.4em;
+      }
+    }
     .excerpt {
       max-height: 15em;
       text-overflow: ellipsis;
@@ -129,6 +136,8 @@ export default {
       position: relative;
     }
     .read-more {
+      padding-right: 16px;
+      padding-top: 16px;
       text-align: right;
     }
   }
