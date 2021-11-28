@@ -125,6 +125,7 @@ export default {
     }
     .post-title {
       h2 {
+        margin-top: 16px;
         font-size: 1.4em;
       }
     }
