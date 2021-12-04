@@ -130,7 +130,7 @@ export default {
       }
     }
     .excerpt {
-      max-height: 15em;
+      max-height: 200px;
       text-overflow: ellipsis;
       overflow: hidden;
       line-height: 1.5em;
